@@ -1,45 +1,52 @@
 export { default as theme } from './theme'
 import { Appear } from "mdx-deck";
+import Iframe from 'react-iframe'
 
 # HTML Prototyping
 ![hello](hello.gif)
 
 ---
 
-# HTML Prototyping
-<ul>
-  <Appear>
-    <li>Why does GDS advocate HTML Prototyping?</li>
-    <li>GDS Design System</li>
-    <li>Show and Tell</li>
-  </Appear>
-</ul>
+# Coming up...
+
+<Appear>
+  <p>Why GDS advocates HTML Prototyping?</p>
+  <p>What is the Gov.uk Design System and how does it work in the x-gov community?</p>
+  <p>Street Manager demo</p>
+</Appear>
 
 ---
 
 # Why does GDS advocate HTML Prototyping?
-[gov.uk/service-manual/design/making-prototypes](https://www.gov.uk/service-manual/design/making-prototypes)
+[https://www.gov.uk/service-manual/design/making-prototypes](https://www.gov.uk/service-manual/design/making-prototypes)
 
 ---
 
-<blockquote>Because prototypes built in code look and behave like the live GOV.UK site...</blockquote>
+<blockquote>Prototypes built in code look and behave like the live GOV.UK site.</blockquote>
 <Appear>
-  <blockquote>they are the best approach if you want to test realistic interactions that a user has with your service.</blockquote>
+  <blockquote>
+They are the best approach if you want to test realistic interactions that a user has with your service.</blockquote>
 </Appear>
+<small>
+  <a href="https://www.gov.uk/service-manual/design/making-prototypes">https://www.gov.uk/service-manual/design/making-prototypes</a>
+</small>
+
 
 ---
 
-<blockquote>Because prototypes built in code look and behave almost exactly like the real thing...</blockquote>
+> Because prototypes built in code look and behave almost exactly like the real thing...
 <Appear>
-  <blockquote>users you test with are less distracted</blockquote>
+    <blockquote>users you test with are less distracted</blockquote>
 </Appear>
 
 ```notes
-On mobile and desktop
+* On mobile and desktop
+* I've noticed observing user testing
 ```
 ---
 
 > You’re always aware of the constraints of designing for the web
+
 ```notes
 * Talk about #a11y here
 * Design System first
@@ -48,12 +55,34 @@ On mobile and desktop
 ---
 # Prototyping with the GDS Design System
 ---
+
+<Iframe
+  url="https://design-system.service.gov.uk/"
+        width="1080px"
+        height="800px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"
+        allowFullScreen
+/>
+
+---
+
+<Iframe
+  url="http://localhost:3000/"
+        width="1080px"
+        height="800px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"
+        allowFullScreen
+/>
+
+---
 ```notes
-Show off design System
-* pattern library
 * back log and contributing
-* creating a demo using components 
-* mobile
 ```
 ---
 ```notes
@@ -63,4 +92,12 @@ Voice Over Demo
 ```notes
 Maps demo
 ```
+---
+# Recap
+
+
+* Because prototypes built in code look and behave almost exactly like the real thing... users you test with are less distracted
+* You’re always aware of the constraints of designing for the web
+* Use Voiceover to do a quick and dirty screen reader test
+
 ---
